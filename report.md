@@ -1,3 +1,4 @@
+
 ===============================
 🚨 DoS Detection Report
 ===============================
@@ -7,15 +8,19 @@
 
 ---------------------------------------
 🔍 Scanning Activity:
-- Total packets analyzed: 1234
-- SYN packets: 784
-- ACK packets: 327
+- Total packets analyzed: 1420
+- SYN packets detected: 982
+- ACK packets detected: 321
+- Unique source IPs: 1
+- High request rate detected from IP: 192.168.1.50
 
-⚠️ Suspicious Behavior Detected:
-- 500+ SYN packets in under 10 seconds
-- High rate of repeated requests from a single IP
+⚠️ Suspicious Behavior Identified:
+- 850+ SYN packets in under 15 seconds
+- Repeated identical request patterns from the same IP
+- Normal TCP handshake incomplete in many cases
 
-🛡️ Conclusion:
-Potential DoS attack pattern detected.
+🛡️ Detection Summary:
+✔️ This behavior is consistent with a SYN flood (DoS attack).
+✔️ Immediate inspection and firewall rules are recommended.
 
-✅ Report generated and saved successfully.
+📁 Log saved by: DoS Detection System v1.0
