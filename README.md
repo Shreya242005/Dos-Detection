@@ -31,3 +31,24 @@ A lightweight Python-based tool to detect **Denial of Service (DoS)** attacks us
    ```bash
    git clone https://github.com/Shreya242005/Dos-Detection.git
    cd Dos-Detection
+2. create a virtual environment:
+     python -m venv venv
+.\venv\Scripts\activate
+3. Install dependencies
+   pip install -r requirements.txt
+4. Generate dataset
+   python generate_dataset.py
+5. Train model
+   python train_model.py
+6. Run the application
+   python main.py
+
+---
+##📊 Example Output
+
+DoS Detection Started...
+Prediction: Normal Traffic
+
+
+
+
